@@ -29,8 +29,8 @@
       shell = {
         disabled = false;
         format = "$indicator";
-        fish_indicator = "[FISH](blue) ";
-        bash_indicator = "[BASH](bright-white) ";
+        fish_indicator = "[FSH](blue) ";
+        bash_indicator = "[BSH](bright-white) ";
         # zsh_indicator = "[ZSH](bright-white) ";
       };
 

@@ -6,6 +6,9 @@
     shellInit=''
     set fish_greeting '''
   '';
+  plugins = [
+    { name = "autopair"; src = pkgs.fishPlugins.autopair.src; }
+  ];
     shellAbbrs = {
       
     };

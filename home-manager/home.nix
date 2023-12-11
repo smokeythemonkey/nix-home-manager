@@ -8,6 +8,7 @@
   
   imports = [
     ./modules/core
+    ./modules/apps
   ];
   home.username = "awol";
   home.homeDirectory = "/home/awol";
@@ -29,13 +30,12 @@
     # '')#
 
     nixfmt
-    vscode
 
     # alacritty needs nixGL to fix/work
     thunderbird
 
     chromium
-    firefox
+    
 
     enpass
 
@@ -67,10 +67,6 @@
 
   targets.genericLinux.enable = true;
 
-  
-
-  programs.ssh = { enable = true; };
-
   home.pointerCursor = {
     name = "Bibata-Modern-Ice";
     package = pkgs.bibata-cursors;
@@ -91,7 +87,7 @@
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
     # EDITOR = "emacs";
-    TERMINAL = "fish";
+    TERMINAL = "/bin/fish";
 
   };
   
